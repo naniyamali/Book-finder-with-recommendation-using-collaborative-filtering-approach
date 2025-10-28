@@ -1,36 +1,35 @@
-import type React from "react"
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "column" as const,
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     padding: "80px 16px",
-  } as React.CSSProperties,
+  },
   spinnerWrapper: {
-    position: "relative" as const,
+    position: "relative",
     width: "48px",
     height: "48px",
     marginBottom: "16px",
-  } as React.CSSProperties,
+  },
   spinnerBg: {
-    position: "absolute" as const,
+    position: "absolute",
     inset: 0,
     borderRadius: "50%",
     border: "4px solid #e5e7eb",
-  } as React.CSSProperties,
+  },
   spinnerFg: {
-    position: "absolute" as const,
+    position: "absolute",
     inset: 0,
     borderRadius: "50%",
     border: "4px solid transparent",
     borderTopColor: "#3b82f6",
     animation: "spin 1s linear infinite",
-  } as React.CSSProperties,
+  },
   text: {
     color: "#6b7280",
     fontSize: "14px",
-  } as React.CSSProperties,
+  },
 }
 
 export default function LoadingSpinner() {
