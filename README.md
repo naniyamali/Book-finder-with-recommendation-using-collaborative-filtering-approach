@@ -9,15 +9,18 @@ A React-based book search application that uses the Open Library API to search f
 - Quick search buttons for popular books
 - Responsive design for mobile and desktop
 - Direct API integration (no backend required)
+  supabase is used where we have security as well 
+  generates jwt token and then proceses no server code need to be writtten seperately , if we use supa database
 - Python backend available for advanced use cases
+- it works like netflix when user a reads book a and book b user b reads a ,book b will be recommended
+  collaborative filtering
+   >>note:only who will signup and login will be recommended
 
 ## How to Run in VS Code
 
-### Option 1: React Frontend Only (Recommended)
+ 1: React Frontend Only (Recommended)
 
-1. **Download the project**
-   - Click the three dots in v0 interface → Download ZIP
-   - Extract and open in VS Code
+
 
 2. **Install dependencies**
    \`\`\`bash
@@ -32,9 +35,9 @@ A React-based book search application that uses the Open Library API to search f
 4. **Open in browser**
    - Navigate to `http://localhost:3000`
 
-### Option 2: With Python Backend (Optional)
+### Option 2: With Python Backend 
 
-If you want to use the Python backend for API calls:
+ the Python backend for API calls:
 
 1. **Install Python dependencies**
    \`\`\`bash
@@ -47,7 +50,7 @@ If you want to use the Python backend for API calls:
    python search_books.py
    \`\`\`
 
-3. **Create API endpoints** (you'll need to add Flask/FastAPI)
+3. **Create API endpoints** 
    - The Python file provides the BookSearchAPI class
    - You can wrap it with Flask or FastAPI to create REST endpoints
 
@@ -60,7 +63,9 @@ book-finder/
 │   ├── layout.jsx        # App layout wrapper
 │   └── globals.css       # Global styles
 ├── api/
-│   ├── search_books.py   # Python backend (optional)
+│   ├── search_books.py 
+# Python backend (optional)
+also recommendation by collaborative network filtering
 │   └── requirements.txt  # Python dependencies
 └── public/
     └── abstract-book-cover.png  # Fallback book cover
@@ -68,7 +73,7 @@ book-finder/
 
 ## Current Setup
 
-The app currently calls the Open Library API directly from the React frontend. The Python backend is available but not integrated by default.
+The app currently calls the Open Library API directly from the React frontend. The Python backend is available to execute the calls and fetch and will load
 
 ## Technologies Used
 
@@ -81,6 +86,4 @@ The app currently calls the Open Library API directly from the React frontend. T
 
 Your project is automatically deployed on Vercel and synced with v0.app.
 
-**Live URL:** [https://vercel.com/is10nani12-7211s-projects/v0-task-list-ui](https://vercel.com/is10nani12-7211s-projects/v0-task-list-ui)
-
-**Continue building:** [https://v0.app/chat/projects/6AD4Sw2cqin](https://v0.app/chat/projects/6AD4Sw2cqin)
+**Live URL:** https://v0-task-list-ui-phi.vercel.app/
